@@ -1,0 +1,21 @@
+{
+  "name": "ci-utils",
+  "version": "1.0.0",
+  "description": "A set of CI scripts that helps set up CI",
+  "repository": "git@github.com:magda-io/ci-utils.git",
+  "author": "Jacky Jiang <jacky.jiang@data61.csiro.au>",
+  "bin": {
+    "check-helm-chart-verion": "./lib/helm-chart-version-check.js",
+    "update-helm-chart-version": "./lib/update-helm-chart-version.js"
+  },
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "recursive-readdir": "^2.2.2",
+    "yaml": "^1.10.2"
+  }
+}
