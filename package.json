@@ -1,5 +1,5 @@
 {
-  "name": "ci-utils",
+  "name": "@magda/ci-utils",
   "version": "1.0.0",
   "description": "A set of CI scripts that helps set up CI",
   "repository": "git@github.com:magda-io/ci-utils.git",
@@ -9,7 +9,7 @@
     "update-helm-chart-version": "./lib/update-helm-chart-version.js"
   },
   "license": "Apache-2.0",
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">=10"
   },
