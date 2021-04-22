@@ -9,7 +9,7 @@
     "update-helm-chart-version": "./lib/update-helm-chart-version.js"
   },
   "license": "Apache-2.0",
-  "private": false,
+  "private": true,
   "engines": {
     "node": ">=10"
   },
