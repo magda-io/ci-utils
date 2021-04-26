@@ -1,15 +1,15 @@
 {
   "name": "@magda/ci-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A set of CI scripts that helps set up CI",
   "repository": "git@github.com:magda-io/ci-utils.git",
   "author": "Jacky Jiang <jacky.jiang@data61.csiro.au>",
   "bin": {
-    "check-helm-chart-verion": "./lib/helm-chart-version-check.js",
+    "check-helm-chart-version": "./lib/helm-chart-version-check.js",
     "update-helm-chart-version": "./lib/update-helm-chart-version.js"
   },
   "scripts": {
-    "check-helm-chart-verion": "./lib/helm-chart-version-check.js",
+    "check-helm-chart-version": "./lib/helm-chart-version-check.js",
     "update-helm-chart-version": "./lib/update-helm-chart-version.js"
   },
   "license": "Apache-2.0",
