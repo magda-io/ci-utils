@@ -1,6 +1,6 @@
 {
   "name": "@magda/ci-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A set of CI scripts that helps set up CI",
   "repository": "git@github.com:magda-io/ci-utils.git",
   "author": "Jacky Jiang <jacky.jiang@data61.csiro.au>",
