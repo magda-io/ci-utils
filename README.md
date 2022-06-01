@@ -18,8 +18,6 @@ yarn check-helm-chart-version [path to chart.yaml file of the chart...]
 
 Update the version of all helm charts in a folder to a new version number.
 
-You can set `versionUpdateExclude` field of package.json to specify a list charts that should be excluded from changing version.
-
 Usage:
 
 Add the following `scripts` entries to your package.json:
@@ -37,3 +35,30 @@ npm version [new version number]
 ```
 
 to set version.
+
+### Config Options
+
+You can set the following fields in package.json to customize the helm chart version update behavior:
+- `versionUpdateExclude`: 
+  - Type: `string[]`
+  - You can set `versionUpdateExclude` field of package.json to specify a list charts that should be excluded from changing version.
+- `versionUpdateValues`:
+  - Type: `{ [chartName:string]: string[]; }`
+  - This field allow you to specify a list fields that should be update to current version in selected charts' "values" files.
+
+  e.g. the following config:
+  ```
+  "versionUpdateValues": {
+    "helm-chart-A": [
+      "field1.field2.field3",
+      "field4"
+    ],
+    "helm-chart-B": ["field5"]
+  }
+  ```
+
+  will make the following fields:
+  - `helm-chart-A` chart's "field1.field2.field3" & "field4" fields
+  - `helm-chart-B`chart's "field5" field
+
+  set to the current package version.
